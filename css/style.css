@@ -1,0 +1,230 @@
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+    /* some basic css resetting */
+body {
+    background-image: url(../images/ryan-dewerff-6erhLtR1U7I-unsplash.jpg);
+    background-color: #0FAACE; /* Used if the image is unavailable */
+    height: 500px; 
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-size:120%;
+    font-family: "Helvetica";
+    text-align: center;
+    margin: 0px;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+/* ==========HEADER============= */
+header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: #000000;
+}
+/* ==========LOGO============= */
+/* ==========NAVIGATION============= */
+nav {
+    background: linear-gradient(to right, #7EBFCD, #C0EAF4);
+    margin: auto auto; /*Center child elements*/
+    text-align: left;
+    vertical-align: center;
+    display: flex;
+    height: 75px;
+    border-bottom: 4px solid #178ca7; /*Make a clearer transition from nav to main content section*/
+}
+
+@font-face {
+    font-family: "AvenirNext-UltraLight";
+    src: url("../fonts/AvenirNext-UltraLight.ttf");
+}    
+
+#nectar-brand-text{
+    display: inline-flex;
+    font-family: "AvenirNext-UltraLight";
+    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    padding-bottom: 10px; /*make element slightly bigger for better centering of font*/
+}
+
+nav img{
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-links {
+    display: inline-flex;
+    padding-top: 5px; /*push nav links down a little to align better with logo*/
+    margin-left: 20px;
+}
+
+.nav-links a{
+    /*max-height: 100px;*/
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+/* ==========MAIN BODY CONTENT============= */
+.page-content{  /* Parent container flex box*/
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left-content{ /* Child container for blog posts */
+    flex: 1;
+    margin-top: 40px;
+    min-width: 40%;
+    max-width: 40%;
+    text-align: left;
+}
+
+.right-content{ /* Child container for image posts */
+    flex: 1;
+    display: grid;
+    margin-top: 40px;
+    max-width: 1200px;
+}
+
+/* ==========SECTION 1 STYLING============= */
+
+.left-content-section {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 600px;
+}
+
+.left-content-section p {
+    text-align: left;
+    font-size: 22px;
+}
+
+.product-container{
+    margin: 10px;
+    width: 75px;
+    height: 100px;
+    margin-right: 40px;
+    border: solid 1px #000000;
+}
+
+.product-container img{
+    width: 75px;
+    height: 100px;
+    vertical-align: middle; 
+}
+
+/* ==========SECTION 2 STYLING============= */
+
+/* ==========SECTION 3 STYLING============= */
+
+/* ==========SECTION 4 STYLING============= */
+
+
+/* ==========FOOTER STYLIING============= */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7EBFCD;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+ }
+
+ footer span {
+    margin:0;
+    padding: 0;
+ }
+
+ #footer-img {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+ }
+
+ #footer-img-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+ }
+
+
+/* ==========RESPONSIVE DESIGN============= */
+
+/* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
+@media only screen and (max-width: 5120px) {
+
+        
+}
+
+/* ===== DESKTOP HD: Media queries for most HD desktops ===== */
+@media only screen and (max-width: 1920px) {
+   
+    
+    
+}
+
+/* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
+@media only screen and (max-width: 1366px) { 
+
+      
+    
+}
+
+/* ===== TABLET: Media queries for verticle and horizontal ===== */
+@media only screen and (max-width: 1024px) { 
+
+      
+    
+}
+
+@media only screen and (max-width: 768px) { 
+
+    
+        
+}
+
+/* ===== MOBILE: Media queries for small mobile resolution. ===== */
+@media only screen and (max-width: 640px) { 
+
+    
+        
+}
+
+
+@media only screen and (max-width: 360px) { 
+
+            
+        
+}
+
