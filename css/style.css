@@ -44,7 +44,7 @@ nav {
     border-bottom: 4px solid #178ca7; /*Make a clearer transition from nav to main content section*/
 }
 
-@font-face {
+@font-face { /* Import client's chosen font*/
     font-family: "AvenirNext-UltraLight";
     src: url("../fonts/AvenirNext-UltraLight.ttf");
 }    
@@ -59,7 +59,13 @@ nav {
     padding-bottom: 10px; /*make element slightly bigger for better centering of font*/
 }
 
-nav img{
+#top-of-page-link{
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav img{ /*Site Logo*/
     display: inline-flex;
     margin-top: auto;
     margin-bottom: auto;
@@ -68,13 +74,13 @@ nav img{
     width: 50px;
 }
 
-.nav-links {
+#nav-links {
     display: inline-flex;
     padding-top: 5px; /*push nav links down a little to align better with logo*/
     margin-left: 20px;
 }
 
-.nav-links a{
+#nav-links a{
     /*max-height: 100px;*/
     margin-top: auto;
     margin-bottom: auto;
@@ -83,8 +89,8 @@ nav img{
     margin-left: 20px;
 }
 
-.nav-links a:hover{
-    text-decoration: underline;
+#nav-links a:hover{ 
+    text-decoration: underline; /* Make it clear when a link is being hovered*/
 }
 
 /* ==========MAIN BODY CONTENT============= */
@@ -164,8 +170,8 @@ footer {
  }
 
  #footer-img {
-    width: 800px;
-    height: 800px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -181,48 +187,87 @@ footer {
 
 /* ==========RESPONSIVE DESIGN============= */
 
-/* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
-@media only screen and (max-width: 5120px) {
-
-        
-}
-
-/* ===== DESKTOP HD: Media queries for most HD desktops ===== */
-@media only screen and (max-width: 1920px) {
-   
-    
-    
-}
-
 /* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
 @media only screen and (max-width: 1366px) { 
-
+    .hamburger-menu{ /*Dont show hamburger menu on desktop or tablet*/
+        display: none;
+    }
       
     
 }
 
 /* ===== TABLET: Media queries for verticle and horizontal ===== */
 @media only screen and (max-width: 1024px) { 
-
+    .hamburger-menu{ /*Dont show hamburger menu on desktop or tablet*/
+        display: none;
+    }
       
     
 }
 
-@media only screen and (max-width: 768px) { 
-
-    
-        
-}
-
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
-@media only screen and (max-width: 640px) { 
-
-    
-        
-}
 
 
 @media only screen and (max-width: 360px) { 
+            
+      
+    /* ===== MOBILE: HAMBURGER MENU  ===== */
+    /* ===== Reference: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  ===== */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px; /*Position drop down beneath navbar*/
+        left: 0px; /*Position drop down beneath navbar*/
+        background-color: #178ca7;
+        width: 100%;
+        margin-left: 0; /*Remove margin on mobile so menu fills width of page*/
+      }
+      
+      nav a  {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right: 5px;
+        width: 55px;
+        height: 50px;
+      }
+      
+      nav a:hover {
+        background-color: #178ca7;
+      }
+
+      #top-of-page-link:hover { /*Remove background color from appearing when hovvering over logo*/
+        background-color: initial;
+    }
+
+      /* ===== MOBILE: Resize elements for responsiveness  ===== */
+
+      #footer-img { /*Make footer picture disappear on mobile*/
+       display: none;
+     }
+
+     #nectar-brand-text{
+        font-size: 30px;
+        margin-left: 10px;
+        padding-bottom: 5px; /*make element slightly bigger for better centering of font*/
+    }
+
+    nav img{
+        height: 40px; /*Make logo slightly smaller on mobile*/
+        width: 40px;
+        margin-left: 0px;
+    }
+
 
             
         
