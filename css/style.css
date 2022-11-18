@@ -220,6 +220,10 @@ h2{
     height: 820px;
 }
 
+.product-type{
+    font-weight: bold;
+}
+
 /* Descriptions for all drinks */
 #product-description-drink1, #product-description-drink2, #product-description-drink3, 
 #product-description-drink4, #product-description-drink5, #product-description-drink6 {
