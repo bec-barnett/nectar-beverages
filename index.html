@@ -28,10 +28,10 @@
                     <span id="nectar-brand-text">nectar</span>
                 </a>
                 <div id="nav-links">
-                    <a href="#">products</a>
-                    <a href="#">our story</a>
-                    <a href="#">stockists</a>
-                    <a href="#">contact</a>
+                    <a href="#Products" >products</a>
+                    <a href="#Our-Story">our story</a>
+                    <a href="#Stockists">stockists</a>
+                    <a href="#Contact">contact</a>
                 </div>
                 <a href="javascript:void(0);" class="hamburger-menu" onclick="mobileMenu()">
                     <img src="./images/menu-icon.png" alt="Menu">
@@ -43,11 +43,125 @@
         <!--MAIN CONTENT-->   
         <main>
           
-            <!--ARTICLE 1 Home-->
-            <article class="page-content"> 
+            <!--ARTICLE 1 Products-->
+            <article class="page-content" id="Products"> 
                 <section class="left-content">
                     <section class="left-content-section">
-                        <h2>This is a blog post.</h2>
+                        <h2>products</h2>
+                            <p id="product-description-home">  
+                                <span>Nectar drinks are a new beverage with just a touch of sweetness, perfect for social occasions. </span><span>Our lightly sparkling drinks are made from hemp extract 
+                                and adaptogens, helping to promote a calm state of mind.</span><span> All of our products are produced in Mararet River, Western Australia and feature the highest 
+                                quality locally sourced ingredients. </span>
+                            </p>
+                            <p id="product-description-drink1">
+                                <span class ="description-title">Nectar Original</span>
+                                <span class="description">The drink that started it all. Our Nectar Original is an Australian First. Blending pure hemp extract with Australian Bush Mint 
+                                    and Euctalyptus, this drink contains high levels of adaptogens that will help keep you focused.</span>
+                                <span class="availability">Available Now</span>
+                            </p>
+                            <p id="product-description-drink2">
+                                <span class ="description-title">Sparkling Mint</span>
+                                <span class="description">Extreme Refreshment. This drink blends pure hemp extra with pure mint oil, crafting a delicious drink that is sure to quench any 
+                                    thirst. Perfect for a mid afternoon pick-up to help power through your day.
+                                </span>
+                                <span class="availability">Available Now</span>
+                            </p>
+                            <p id="product-description-drink3">
+                                <span class ="description-title">Pure Focus</span>
+                                <span class="description">This one's for all the students out there. We found the perfect blend of adaptogens to provide maximum focus without the usual post-caffine
+                                    slump. Perfect for staying focused through whatever life throws at you.  
+                                </span>
+                                <span class="availability">Available Now</span>
+                            </p>
+                            <p id="product-description-drink4">
+                                <span class ="description-title">Limitless Lime</span>
+                                <span class="description">What is limitless? Is it the absence of boundaries? Is it finding how far you can go? With Limitless Lime, you are sure to find out. Not only 
+                                    is Limitless Lime delicious, it also will give you the energy you need to take your abilities to the next level.   
+                                </span>
+                                <span class="availability">While Stocks Last</span>
+                            </p>
+                            <p id="product-description-drink5">
+                                <span class ="description-title">After Midnight</span>
+                                <span class="description">The adaptogens and hemp extract blended into After Midnight are scientifically designed to help calm the nervous system and fight stress. 
+                                    This is the perfect drink for those looking to de-stress and go with the flow. 
+                                </span>
+                                <span class="availability">Coming Soon</span>
+                            </p>
+                            <p id="product-description-drink6">
+                                <span class ="description-title">Ruby Refresh</span>
+                                <span class="description">The Citrus extra in Ruby Refresh is clinically proven to stimulate the mind and provides the electrolytes needed for your body to 
+                                    operate at peak performance. 
+                                </span>
+                                <span class="availability">Coming Soon</span>
+                            </p>
+                    </section>
+                </section>
+                <section class="right-content">
+                    <div class="parent-product">
+                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink1")'>
+                            <div class="child-product-container">
+                                <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                                <div class="product-description">
+                                    <p>Nectar Original 250ml</p>
+                                    <p>$4.50 AUD</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink2")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <div class="product-description">
+                                <p>Sparkling Mint 250ml</p>
+                                <p>$4.50 AUD</p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink3")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan.png" alt="Nectar drink can">
+                            <div class="product-description">
+                                <p>Pure Focus 250ml</p>
+                                <p>$4.50 AUD</p>
+                            </div>    
+                        </div>
+                        </a>
+                        <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink4")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <div class="product-description">
+                                <p>Limitless Lime 250ml</p>
+                                <p>$4.50 AUD</p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink5")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <div class="product-description">
+                                <p>After Midnight 250ml</p>
+                                <p>$4.50 AUD</p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink6")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <div class="product-description">
+                                <p>Ruby Refresh 600ml</p>
+                                <p>$9.00 AUD</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </section>
+            </article>
+                
+
+            <!--ARTICLE 2 Our Story-->
+            <article class="page-content" id="Our-Story"> 
+                <section class="left-content">
+                    <section class="left-content-section">
+                        <h2>Our Story</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus ullamcorper ipsum ac tincidunt. 
                                 Ut magna est, maximus at libero vitae, interdum fringilla lacus. Aenean pellentesque lacus sed 
@@ -56,48 +170,41 @@
                                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
                             </p>
                     </section>
-                    <section class="left-content-section">
-                        <h2>This is also a blog post.</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus ullamcorper ipsum ac tincidunt. 
-                            Ut magna est, maximus at libero vitae, interdum fringilla lacus. Aenean pellentesque lacus sed 
-                            pellentesque consequat. Maecenas imperdiet neque eu felis facilisis, id ullamcorper arcu viverra.
-
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                        </p>
-                    </section>
                 </section>
                 <section class="right-content">
-                    <div class="product-container">
-                        <img src="./images/drinkCan.png" alt="Nectar drink can">    
-                    </div>
-                    <div class="product-container">
-                        <img src="./images/drinkCan.png" alt="Nectar drink can">    
-                    </div>
-                    <div class="product-container">
-                        <img src="./images/drinkCan.png" alt="Nectar drink can">    
-                    </div>
-                </section>
-            </article>
-                
 
-            <!--ARTICLE 2 Products-->
-            <article>
+                </section>
             </article>
                
 
-            <!--ARTICLE 3 Our Story-->
-            <article>
+            <!--ARTICLE 3 Stockists-->
+            <article class="page-content" id="Stockists"> 
+                <section class="left-content">
+                    <section class="left-content-section">
+                        <h2>Stockists</h2>
+                            <p>
+                                Nectar Beverages are Available in select Supermarkets and Convienience Stores around Western Australia. Keep an eye on this page for more locations coming soon.                                
+                            </p>
+                    </section>
+                </section>
+                <section class="right-content">
+
+                </section>
             </article>
             
+            <!--ARTICLE 4 Contact-->
+            <article class="page-content"  id="Contact"> 
+                <section class="left-content">
+                    <section class="left-content-section">
+                        <h2>Contact</h2>
+                            <p>
+                                This is a contact form.  Or maybe its just a phonenumber and email address.
+                            </p>
+                    </section>
+                </section>
+                <section class="right-content">
 
-            <!--ARTICLE 4 Stockists-->
-            <article>
-            </article>
-
-            <!--ARTICLE 5 Contact-->
-            <article>
-                <!--CONTACT FORM OR TEXT-->
+                </section>
             </article>
             
 
@@ -111,10 +218,17 @@
                 <image id="footer-img" src="./images/aloe.png">
             </div>
 
-            <span>
-                <!--Credits, Copyright Ect.-->
-                Created by Rebecca Barnett
-            </span>
+            <!--Credits, Copyright Ect.-->
+            <p>
+                Created by Rebecca Barnett 2022
+            </p>
+            <p>
+                This website has been created as part of an assignment in an approved course of study for Curtin
+                University and contains copyright material not created by the author. All copyright material used
+                remains copyright of the respective owners and has been used here pursuant to Section 40 of the
+                Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without
+                consent of the original copyright owners. See code comments for references.
+            </p>
         </footer>        
         
     </body> 

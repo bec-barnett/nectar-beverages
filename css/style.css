@@ -5,6 +5,7 @@ body {
     background-color: #0FAACE; /* Used if the image is unavailable */
     height: 500px; 
     background-size:cover;
+    background-attachment: fixed; /* Background will stay in position as content scrolls over the top of it */
     background-position: center; 
     background-repeat: no-repeat;
     font-size:120%;
@@ -21,11 +22,8 @@ a {
     text-decoration: none;
 }
 
-
-
 /* ==========HEADER============= */
 header {
-    
     position: fixed;
     top: 0;
     left: 0;
@@ -44,10 +42,20 @@ nav {
     border-bottom: 4px solid #178ca7; /*Make a clearer transition from nav to main content section*/
 }
 
+@font-face { /* Import Font for main content  */
+    font-family: "Quicksand-Light";
+    src: url("../fonts/Quicksand-Light.ttf");
+} 
+
+@font-face { /* Import main content font - bolder design*/
+    font-family: "Quicksand-Medium";
+    src: url("../fonts/Quicksand-Medium.ttf");
+}    
+
 @font-face { /* Import client's chosen font*/
     font-family: "AvenirNext-UltraLight";
     src: url("../fonts/AvenirNext-UltraLight.ttf");
-}    
+}  
 
 #nectar-brand-text{
     display: inline-flex;
@@ -93,6 +101,10 @@ nav img{ /*Site Logo*/
     text-decoration: underline; /* Make it clear when a link is being hovered*/
 }
 
+.hamburger-menu {
+    display: none; /*Don't show hamburger menu on desktop/tablet*/
+}
+
 /* ==========MAIN BODY CONTENT============= */
 .page-content{  /* Parent container flex box*/
     padding-top: 2em;
@@ -100,48 +112,118 @@ nav img{ /*Site Logo*/
     flex-wrap: wrap;
     justify-content: center;
 }
-.left-content{ /* Child container for blog posts */
+.left-content{ /* Child container for articles, aligned left */
     flex: 1;
-    margin-top: 40px;
+    margin-top: 45px;
     min-width: 40%;
     max-width: 40%;
     text-align: left;
 }
 
-.right-content{ /* Child container for image posts */
+.right-content{ /* Child container articles, aligned right */
     flex: 1;
-    display: grid;
     margin-top: 40px;
     max-width: 1200px;
 }
 
+h2{
+    font-family: "AvenirNext-UltraLight";
+    font-size: 80px;
+    margin: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
 /* ==========SECTION 1 STYLING============= */
 
 .left-content-section {
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin: 20px;
     height: 600px;
 }
 
 .left-content-section p {
     text-align: left;
-    font-size: 22px;
+    font-size: 30px;
+    margin: 20px;
+    font-family: "Quicksand-Light";
+    font-weight: bold;
 }
 
-.product-container{
+#product-description-home span {
+    display: block;
+    font-style: italic;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.description-title{
+    display: block;
+    font-family: "Quicksand-Medium";
+    padding-top: 20px; 
+}
+
+.description{
+    margin-top: 20px;
+    display: block;
+}
+
+.availability{
+    display: block;
+    font-family: "Quicksand-Medium";
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* =============== Products Display ============== */
+.parent-product{ /*Parent Class for All Products*/
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-product-container{ /* Child Class for Single Products*/
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
     margin: 10px;
-    width: 75px;
-    height: 100px;
-    margin-right: 40px;
-    border: solid 1px #000000;
 }
 
-.product-container img{
-    width: 75px;
-    height: 100px;
+.child-product-container:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 4px 8px;
+}
+
+.child-product-container img{
+    margin: auto;
+    width: 150px;
+    height: 250px;
     vertical-align: middle; 
+}
+
+.product-description{
+    position: relative;
+    bottom: 0;
+    max-width: 280px;
+    max-height: 100px;
+    min-width: 100%;
+    min-height: 25%;
+    overflow: hidden;
+}
+
+#Products .left-content-section {
+    height: 820px;
+}
+
+/* Descriptions for all drinks */
+#product-description-drink1, #product-description-drink2, #product-description-drink3, 
+#product-description-drink4, #product-description-drink5, #product-description-drink6 {
+    display:none; /*Display is hidden until item is clicked*/
 }
 
 /* ==========SECTION 2 STYLING============= */
@@ -153,9 +235,7 @@ nav img{ /*Site Logo*/
 
 /* ==========FOOTER STYLIING============= */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: block;
     width: 100%;
     background-color: #7EBFCD;
     color: white;
@@ -164,26 +244,22 @@ footer {
     padding: 0;
  }
 
- footer span {
+ footer p {
     margin:0;
-    padding: 0;
+    margin: auto;
+    padding: 5px;
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
  }
 
  #footer-img {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    height: 400px;    
  }
-
- #footer-img-container {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 0;
- }
-
 
 /* ==========RESPONSIVE DESIGN============= */
 
@@ -268,8 +344,13 @@ footer {
         margin-left: 0px;
     }
 
+    footer p { /*Now that footer picture is hidden we can display footer p as 100%*/
+        width: 100%;
+     }
 
-            
+    body {
+        font-size:80%;
+    }            
         
 }
 
