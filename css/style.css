@@ -1,82 +1,86 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
-    /* some basic css resetting */
+/* some basic css resetting */
 body {
-    background-image: url(../images/ryan-dewerff-6erhLtR1U7I-unsplash.jpg);
-    background-color: #0FAACE; /* Used if the image is unavailable */
-    height: 500px; 
-    background-size:cover;
+    background-image: url(../images/ryan-dewerff-6erhLtR1U7I-unsplash.jpg); /*Photo by Ryan DeWerff on Unsplash*/
+    background-color: #0FAACE; /* Used if the background image is unavailable */
+    background-size: cover; /* Stretch background image to fill screen*/
     background-attachment: fixed; /* Background will stay in position as content scrolls over the top of it */
     background-position: center; 
     background-repeat: no-repeat;
-    font-size:120%;
+    font-size: 120%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 0px;
+    margin: 0px;/* Reset margins */
     height: 100%;
     width: 100%;
 }
+
 html {
     height: 100%;
     width: 100%;
 }
-a {
+
+a { /* Reset hyperlinks to not be blue and underlined */
     color: #000000;
     text-decoration: none;
 }
 
 /* ==========HEADER============= */
 header {
-    position: fixed;
+    position: fixed; /* Fix header in position so it remains at top of screen as user scrolls */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2; /*Make sure nav bar appears over the top of ther elements*/
+    z-index: 2; /* Had issue with some text floating above navbar as user scrolls past. Fixed by using z-index on header*/
 }
+
 /* ==========LOGO============= */
 /* ==========NAVIGATION============= */
 nav {
-    background: linear-gradient(to right, #7EBFCD, #C0EAF4);
-    margin: auto auto; /*Center child elements*/
+    background: linear-gradient(to right, #7EBFCD, #C0EAF4); /* Gradient background colour to match client's logo design */
+    margin: auto auto;
     text-align: left;
     vertical-align: center;
     display: flex;
     height: 75px;
     border-bottom: 4px solid #178ca7; /*Make a clearer transition from nav to main content section*/
-    
 }
 
-@font-face { /* Import Font for main content  */
-    font-family: "Quicksand-Light";
+@font-face {
+    /* Import Font for main content  */
+    font-family: "Quicksand-Light"; /*  Quicksand Designed by Andrew Paglinawan from Google Fonts */
     src: url("../fonts/Quicksand-Light.ttf");
-} 
+}
 
-@font-face { /* Import main content font - bolder design*/
-    font-family: "Quicksand-Medium";
+@font-face {
+    /* Import main content font - bolder design*/
+    font-family: "Quicksand-Medium";/*  Quicksand Designed by Andrew Paglinawan from Google Fonts */
     src: url("../fonts/Quicksand-Medium.ttf");
-}    
+}
 
-@font-face { /* Import client's chosen font*/
-    font-family: "AvenirNext-UltraLight";
+@font-face {
+    /* Import client's chosen font - looks patchy on small font sizes - best used on larger text*/
+    font-family: "AvenirNext-UltraLight";/* Font made from http://www.onlinewebfonts.com" oNline Web Fonts - licensed by CC BY 3.0 */
     src: url("../fonts/AvenirNext-UltraLight.ttf");
-}  
+}
 
-#nectar-brand-text{
+#nectar-brand-text {  /* Client Logo Text - Nectar */
     display: inline-flex;
     font-family: "AvenirNext-UltraLight";
     font-size: 50px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 20px;
-    padding-bottom: 10px; /*make element slightly bigger for better centering of font*/
+    padding-bottom: 10px;
 }
 
-#top-of-page-link{
+#top-of-page-link {/* Anchor tag to refresh page  */
     display: inline-flex;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-nav img{ /*Site Logo*/
+nav img { /*Site Logo*/    
     display: inline-flex;
     margin-top: auto;
     margin-bottom: auto;
@@ -85,14 +89,13 @@ nav img{ /*Site Logo*/
     width: 50px;
 }
 
-#nav-links {
+#nav-links { /* Navigation Links */
     display: inline-flex;
     padding-top: 5px; /*push nav links down a little to align better with logo*/
     margin-left: 20px;
 }
 
-#nav-links a{
-    /*max-height: 100px;*/
+#nav-links a {
     margin-top: auto;
     margin-bottom: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -100,31 +103,31 @@ nav img{ /*Site Logo*/
     margin-left: 20px;
 }
 
-#nav-links a:hover{ 
-    text-decoration: underline; /* Make it clear when a link is being hovered*/
+#nav-links a:hover {
+    text-decoration: underline;  /* Make it clear when a link is being hovered*/
 }
 
-.hamburger-menu {
+.hamburger-menu { /* Hamburger Menu for Mobile Navigation */
     display: none; /*Don't show hamburger menu on desktop/tablet*/
 }
 
 /* ==========MAIN BODY CONTENT============= */
-.home{
+.home { /* Landing Page - What user see's when first visiting website */
     width: 100%;
-    height: 100vh;
-    background-image: url(../images/ibrahim-rifath-NJ7CaVfWYaw-unsplash.jpg);
-    background-size:cover;
+    height: 100vh; /* Make it take up the entire viewport in height */
+    background-image: url(../images/ibrahim-rifath-NJ7CaVfWYaw-unsplash.jpg); /* Image by Photo by Ibrahim Rifath on Unsplash */
+    background-size: cover;
     background-attachment: fixed; /* Background will stay in position as content scrolls over the top of it */
-    background-position: center; 
+    background-position: center;
     text-align: right;
 }
 
-.home h1 {
+.home h1 { /* Bold Typography Design - Large Title Text on Homepage */
     position: absolute;
     bottom: 0;
     right: 0;
     padding-right: 400px;
-    margin-bottom: 50px; /*Align heading with drink can*/
+    margin-bottom: 50px;  /*Align text with drink can*/
     font-size: 150px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -133,7 +136,7 @@ nav img{ /*Site Logo*/
     width: 60%;
 }
 
-.home-img-container{
+.home-img-container { /* Nectar Drink Can Image */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -141,18 +144,23 @@ nav img{ /*Site Logo*/
     margin-bottom: 50px;
 }
 
-.home img{
+.home img { /* Nectar Drink Can Image */
     width: 300px;
     height: 600px;
 }
 
-.page-content{  /* Parent container flex box*/
+.page-content {
+    /* Parent container flex box*/
     padding-top: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.left-content{ /* Child container for articles, aligned left */
+
+/* Page content mostly displayed as a two column flex layout - when screen is made smaller the right column content will be pushed under the left column content */
+/* Left Column */
+.left-content {
+    /* Child container for articles, aligned left */
     flex: 1;
     margin-top: 45px;
     min-width: 40%;
@@ -169,13 +177,15 @@ nav img{ /*Site Logo*/
     font-weight: bold;
 }
 
-.right-content{ /* Child container articles, aligned right */
+/* Right Column */
+.right-content {
+    /* Child container articles, aligned right */
     flex: 1;
     margin-top: 40px;
     max-width: 1200px;
 }
 
-h2{
+h2 {
     font-family: "AvenirNext-UltraLight";
     font-size: 80px;
     margin: 20px;
@@ -183,11 +193,13 @@ h2{
 }
 
 /* Give Article's 100% view height*/
-#Contact, #Stockists, #Our-Story{
+#Contact,
+#Stockists,
+#Our-Story {
     height: 100vh;
 }
 
-/* ==========SECTION 1 STYLING============= */
+/* ==========SECTION 1 STYLING - our products ============= */
 
 .left-content-section {
     margin: 20px;
@@ -203,35 +215,36 @@ h2{
     text-align: center;
 }
 
-.description-title{
+.description-title { 
     display: block;
     font-family: "Quicksand-Medium";
 }
 
-.description{
+.description {
     margin-top: 20px;
     display: block;
 }
 
-.availability{
+.availability {
     display: block;
     font-family: "Quicksand-Medium";
     margin-top: 20px;
     text-align: right;
 }
 
-#aloe-img-container{
+#aloe-img-container {
     text-align: center;
 }
 
 #aloe-img {
     width: 90%;
-    height: 90%;  
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;  
- }
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px; /* Give Image a shadow */
+}
 
 /* =============== Products Display ============== */
-.parent-product{ /*Parent Class for All Products*/
+.parent-product {
+    /*Parent Class for All Products*/
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +252,8 @@ h2{
     align-items: center;
 }
 
-.child-product-container{ /* Child Class for Single Products*/
+.child-product-container {
+    /* Child Class for Single Products*/
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -249,29 +263,33 @@ h2{
     margin: 10px;
 }
 
-.child-product-container:hover{
+.child-product-container:hover { /* Highlight element when user hovers over */
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: rgba(255, 255, 255, 0.3) 0px 4px 8px;
 }
 
-.child-product-container img{
+.child-product-container img { /* Product Images */
     margin: auto;
     width: 100px;
     height: 200px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
-.product-type{
+.product-type {
     font-weight: 600;
 }
 
 /* Descriptions for all drinks */
-#product-description-drink1, #product-description-drink2, #product-description-drink3, 
-#product-description-drink4, #product-description-drink5, #product-description-drink6 {
-    display:none; /*Display is hidden until item is clicked*/
+#product-description-drink1,
+#product-description-drink2,
+#product-description-drink3,
+#product-description-drink4,
+#product-description-drink5,
+#product-description-drink6 {
+    display: none;  /*Display is hidden until item is clicked - will still appear in the HTML for indexing by search engines*/
 }
 
-/* ==========SECTION 2 STYLING============= */
+/* ==========SECTION 2 STYLING - Our Story ============= */
 /* ====== Image Slideshow. Source: https://www.w3schools.com/howto/howto_js_slideshow.asp ====== */
 
 /* Slideshow container */
@@ -281,26 +299,27 @@ h2{
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
+}
 
-  .slideshow-container img{
+.slideshow-container img {
     margin-top: 50px;
     max-width: 700px;
-  }
+}
 
-  /* Hide the images by default */
-  .our-story-slideshow {
-  display:none;
-  }
+/* Hide the images by default */
+.our-story-slideshow {
+    display: none;
+}
 
-  /* Display the first image */
-  #default-slideshow-img{
+/* Display the first image */
+#default-slideshow-img {
     display: block;
-  }
+}
 
-  
-  /* Next & previous buttons */
-  .prev, .next {
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -312,25 +331,26 @@ h2{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
 
-  .prev{
+.prev {
     left: 0;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .our-story-slideshow-caption {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.our-story-slideshow-caption {
     color: #f2f2f2;
     font-size: 20px;
     padding: 8px 12px;
@@ -340,18 +360,20 @@ h2{
     text-align: center;
     font-family: "Quicksand-Medium";
     font-weight: bold;
-  }
+}
 
-/* ==========SECTION 3 STYLING============= */
+/* ==========SECTION 3 STYLING - Product Stockists ============= */
 
-.parent-stockists{ /*Parent Class for All Stockists*/
+.parent-stockists {
+    /*Parent Class for All Stockists*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.child-stockists{ /* Child Class for Stockists*/
+.child-stockists {
+    /* Child Class for Stockists*/
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -366,37 +388,37 @@ h2{
     font-size: 14px;
 }
 
-.stockist-title{
+.stockist-title {
     font-weight: bold;
-    margin: 0; /*Remove applied margin*/
-    margin-top: 20px; /*Reapply top margin*/
+    margin: 0;
+    margin-top: 20px;
 }
 
-/*Center the google maps iframe*/
+/* IFrame for embedded Google Map - Source: https://developers.google.com/maps/documentation/embed/get-started */
 .child-stockists iframe {
-    width: 210px; 
+    width: 210px;
     height: 150px;
     margin: auto;
 }
 
-/* ==========SECTION 4 STYLING============= */
+/* ==========SECTION 4 STYLING - Contact Page ============= */
 
-#contact-left-section p{
+#contact-left-section p {
     text-align: center;
 }
 
-input[type=text], input[type=textarea] {
+input[type=text],
+input[type=textarea] {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 100%; /* Make input elements 100% width */
     padding: 10px;
     border: 1px solid rgb(192, 192, 192);
-    
 }
 
-#message {
+#message { /* Make message input text-box slightly bigger than other text inputs */
     height: 150px;
-}   
+}
 
 form {
     text-align: left;
@@ -409,8 +431,6 @@ label {
     margin-bottom: 10px;
 }
 
-
-
 /* ==========FOOTER STYLIING============= */
 footer {
     display: block;
@@ -420,22 +440,23 @@ footer {
     text-align: center;
     margin: 0;
     padding: 0;
- }
+}
 
- footer p {
-    margin:0;
+footer p {
+    margin: 0;
     margin: auto;
     padding: 5px;
     width: 50%;
     font-size: 10px;
     text-align: center;
- }
+}
 
 /* ==========RESPONSIVE DESIGN============= */
 
 /* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
-@media only screen and (max-width: 1366px) { 
-    .hamburger-menu{ /*Dont show hamburger menu on desktop or tablet*/
+@media only screen and (max-width: 1366px) {
+    .hamburger-menu {
+        /*Dont show hamburger menu on desktop or tablet*/
         display: none;
     }
 
@@ -443,44 +464,47 @@ footer {
         font-size: 120px;
     }
 
-    #aloe-img-container{
-        display: none; /*Once screen size becomes small, remove Aloe image decoration*/
+    #aloe-img-container {
+        display: none;
+        /*Once screen size becomes small, remove Aloe image decoration*/
     }
 
-    .left-content{ /* Child container for articles, aligned left */
+    .left-content {
+        /* Child container for articles, aligned left */
         margin: 0;
         max-width: 30%;
         min-width: 30%;
         text-align: left;
     }
-    
+
     .left-content-section p {
         margin: 10px;
         margin-bottom: 0;
     }
-    
-    .right-content{ /* Child container articles, aligned right */
+
+    .right-content { 
         margin: 0px;
-        max-width: 80%;
-    }     
-    
-    .child-product-container{ /* Child Class for Single Products*/
+        max-width: 80%; /* Increase width of the right column */
+    }
+
+    /*==== Resize Product Display=== */
+    .child-product-container {
         width: 200px;
         height: 275px;
         margin: 5px;
     }
 
-    .child-product-container img{
+    .child-product-container img {
         width: 75px;
         height: 150px;
-        vertical-align: middle; 
+        vertical-align: middle;
     }
 
-    .child-product-container p{ 
+    .child-product-container p {
         font-size: 12px;
     }
 
-    h2{
+    h2 {
         font-size: 50px;
         margin: 10px;
     }
@@ -489,40 +513,43 @@ footer {
         font-size: 18px;
     }
 
-    .child-stockists{ /* Child Class for Stockists*/
+    /* === Resize Stockists Display === */
+    .child-stockists {
         width: 200px;
         height: 200px;
         margin: 5px;
         padding-bottom: 10px;
     }
-    
+
     .child-stockists p {
         font-size: 10px;
     }
-    
-    .stockist-title{
-        margin-top: 10px; /*Reapply top margin*/
+
+    .stockist-title {
+        margin-top: 10px;
     }
-    
-    /*Center the google maps iframe*/
+
     .child-stockists iframe {
-        width: 160px; 
+        width: 160px; /* Make Google Maps iframe slightly smaller */
         height: 140px;
     }
 
-    #Contact, #Stockists {
+    #Contact, /* Make Articles a little smaller */
+    #Stockists {
         height: 75vh;
     }
 
 }
 
 /* ===== TABLET: Media queries for verticle and horizontal ===== */
-@media only screen and (max-width: 1024px) { 
-    .hamburger-menu{ /*Dont show hamburger menu on desktop or tablet*/
+@media only screen and (max-width: 1024px) {
+    .hamburger-menu {
+        /*Dont show hamburger menu on desktop or tablet*/
         display: none;
     }
 
-    #Our-Story .left-content, #Products .left-content {
+    #Our-Story .left-content, /* Make Left Column now take up 100% of width */
+    #Products .left-content {
         min-width: 100%;
     }
 
@@ -530,59 +557,64 @@ footer {
         height: auto;
     }
 
-    #Products .right-content {
+    #Products .right-content { /* Make right column now take up 100% of width */
         min-width: 100%;
     }
 
     .slideshow-container {
-    padding-top: 0;
+        padding-top: 0;
     }
 
-    .slideshow-container img {
+    .slideshow-container img { /* Enforce a max width on slideshow images */
         max-width: 500px;
         margin-top: 0;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         top: 30%; /*Align slideshow buttons to be more centered with image*/
     }
 
-    .child-stockists{ /* Child Class for Stockists*/
+    /* Resize Stockists Elements */
+    .child-stockists {
         width: 150px;
         height: 150px;
         margin: 2px;
         padding-bottom: 5px;
     }
-    
+
     .child-stockists p {
         font-size: 5px;
     }
-    
-    .stockist-title{
-        margin-top: 5px; /*Reapply top margin*/
+
+    .stockist-title {
+        margin-top: 5px;
+        /*Reapply top margin*/
     }
-    
-    /*Center the google maps iframe*/
+
     .child-stockists iframe {
-        width: 120px; 
+        width: 120px;
         height: 120px;
     }
 
-    .child-product-container{ /* Child Class for Single Products*/
+    /* Resize Product Elements */
+    .child-product-container {
+        /* Child Class for Single Products*/
         width: 175px;
         height: 225px;
         margin: 5px;
-    }   
+    }
 
-    .child-product-container img{
+    .child-product-container img {
         width: 75px;
         height: 150px;
     }
 
-    .child-product-container p  {
+    .child-product-container p {
         font-size: 10px;
     }
 
+    /* Resize the home section heading and image to fit better on smaller screen */
     .home h1 {
         font-size: 80px;
         padding-right: 275px;
@@ -592,38 +624,41 @@ footer {
         width: 200px;
         height: 400px;
     }
-      
-    
+
+
 }
 
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
 
 
-@media only screen and (max-width: 360px) { 
-            
-      
+@media only screen and (max-width: 360px) {
+
+
     /* ===== MOBILE: HAMBURGER MENU  ===== */
     /* ===== Reference: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  ===== */
     #nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 75px; /*Position drop down beneath navbar*/
-        left: 0px; /*Position drop down beneath navbar*/
+        top: 75px;
+        /*Position drop down beneath navbar*/
+        left: 0px;
+        /*Position drop down beneath navbar*/
         background-color: #178ca7;
         width: 100%;
-        margin-left: 0; /*Remove margin on mobile so menu fills width of page*/
-      }
-      
-      nav a  {
+        margin-left: 0;
+        /*Remove margin on mobile so menu fills width of page*/
+    }
+
+    nav a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
-      }
-      
-      .hamburger-menu {
+    }
+
+    .hamburger-menu {
         display: block;
         position: absolute;
         right: 0;
@@ -631,42 +666,39 @@ footer {
         padding-right: 5px;
         width: 55px;
         height: 50px;
-      }
-      
-      nav a:hover {
-        background-color: #178ca7;
-      }
+    }
 
-      #top-of-page-link:hover { /*Remove background color from appearing when hovvering over logo*/
+    nav a:hover {
+        background-color: #178ca7;
+    }
+
+    #top-of-page-link:hover {
+        /*Remove background color from appearing when hovvering over logo*/
         background-color: initial;
     }
 
-      /* ===== MOBILE: Resize elements for responsiveness  ===== */
+    /* ===== MOBILE: Resize elements for responsiveness  ===== */
 
-      #footer-img { /*Make footer picture disappear on mobile*/
-       display: none;
-     }
-
-     #nectar-brand-text{
+    #nectar-brand-text { /* Logo text - make a little smaller */
         font-size: 30px;
         margin-left: 10px;
-        padding-bottom: 5px; /*make element slightly bigger for better centering of font*/
+        padding-bottom: 5px;
     }
 
-    nav img{
+    nav img {
         height: 40px; /*Make logo slightly smaller on mobile*/
         width: 40px;
         margin-left: 0px;
     }
 
-    footer p { /*Now that footer picture is hidden we can display footer p as 100%*/
+    footer p {
         width: 100%;
-     }
+    }
 
     body {
-        font-size:80%;
-    }      
-    
+        font-size: 80%;
+    }
+
     /*Make Product Description Stick over the top of products as user scrolls
     so that they can still see product descriptions without scrolling up*/
     #Products .left-content {
@@ -676,6 +708,7 @@ footer {
 
     }
 
+    /* Resize home section */
     .home h1 {
         font-size: 40px;
         padding-right: 40px;
@@ -691,11 +724,13 @@ footer {
         padding: 0;
     }
 
-    h2{
+    /* Resize article headings */
+    h2 {
         font-size: 40px;
         margin: 5px;
     }
-
+    
+    /* Resize product description */
     #product-description-home span {
         display: block;
         padding-bottom: 25px;
@@ -704,67 +739,75 @@ footer {
 
     .left-content-section {
         margin: 0px;
-      }
+    }
 
-      .left-content-section p {
+    .left-content-section p {
         font-size: 14px;
-      }
+    }
 
-      #products-left-section p {
+    #products-left-section p {
         margin-top: 50px;
     }
 
-    .child-product-container{ /* Child Class for Single Products*/
-        width: 100vh; /*Small screen so fill width*/
+    .child-product-container {
+        width: 100vh; /* Make products fill entire width of viewport */
         height: 300px;
         margin: 5px;
-    }   
+    }
 
-    .child-product-container img{
+    .child-product-container img {
         width: 75px;
         height: 150px;
     }
 
-    .child-product-container p  {
+    .child-product-container p {
         font-size: 10px;
     }
 
     .slideshow-container {
-        display: none; /*Hide slideshow on mobile*/
+        display: none;
+        /*Hide slideshow on mobile*/
     }
 
-    body {
-        background-image: url(../images/mobile-ryan-dewerff-6erhLtR1U7I-unsplash.jpg);
+    body { /* For Mobile use a different background that won't clash with text that appears over it */
+        background-image: url(../images/mobile-ryan-dewerff-6erhLtR1U7I-unsplash.jpg); /*Photo by Ryan DeWerff on Unsplash*/
     }
 
-    #Our-Story .left-content, #Stockists .left-content, #Contact .left-content {
+    /* Make left columns all 100% width */
+    #Our-Story .left-content,
+    #Stockists .left-content,
+    #Contact .left-content {
         min-width: 100%;
     }
 
-    #Contact, #Stockists, #Our-Story {
+    /* Trim the height to be automatic on mobile views */
+    #Contact,
+    #Stockists,
+    #Our-Story {
         height: auto;
     }
 
-    .child-stockists{ /* Child Class for Stockists*/
+    /* Resize stockists */
+    .child-stockists {
+        /* Child Class for Stockists*/
         width: 100%;
         height: 300px;
         margin: 0;
         margin-bottom: 20px;
-        margin-top : 20px;
+        margin-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .child-stockists p {
         font-size: 16px;
     }
-    
-    .stockist-title{
-        margin-top: 10px; /*Reapply top margin*/
+
+    .stockist-title {
+        margin-top: 10px;
     }
-    
-    /*Center the google maps iframe*/
+
     .child-stockists iframe {
-        width: 250px; 
+        width: 250px;
         height: 225px;
     }
 
@@ -772,11 +815,10 @@ footer {
         max-width: 100%;
     }
 
+    /* Resize Form */
     form {
         width: 100%;
         padding-bottom: 20px;
-      }
-        
+    }
+
 }
-
-

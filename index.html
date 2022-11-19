@@ -1,295 +1,348 @@
 <!doctype html>
 <html lang="en">
-    <head> 
-        <meta charset="utf-8">     
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Nectar Beverages</title> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="author" content="Rebecca Barnett">
-        <meta name="description" content="Nectar Functional Hemp Beverages">
-        <meta name="keywords" content="Nectar Beverages, Nectar, Drinks, Functional, Western Australia, WA, Hemp, Hemp Drinks">
+    <title>Nectar Beverages</title>
 
-        <link rel="stylesheet" href="css/style.css">       
-        <link rel="icon" href="./images/favicon.ico">
-        <script src="js/script.js"></script>   
-                
-    </head>
-    <body>
-        
+    <meta name="author" content="Rebecca Barnett">
+    <meta name="description" content="Nectar Functional Hemp Beverages">
+    <meta name="keywords"
+        content="Nectar Beverages, Nectar, Drinks, Functional, Western Australia, WA, Hemp, Hemp Drinks">
 
-        <!--HEADER-->
-        <header>
-            <!--NAVIGATION-->
-            <nav>
-                <!--LOGO-->
-                <a href="./index.html" id="top-of-page-link">
-                    <img src="./images/nectar_logo_transaparent.png" alt="Nectar Mandella Logo" id="logo">
-                    <span id="nectar-brand-text">nectar</span>
-                </a>
-                <div id="nav-links">
-                    <a href="#Products" >products</a>
-                    <a href="#Our-Story">our story</a>
-                    <a href="#Stockists">stockists</a>
-                    <a href="#Contact">contact</a>
-                </div>
-                <a href="javascript:void(0);" class="hamburger-menu" onclick="mobileMenu()">
-                    <img src="./images/menu-icon.png" alt="Menu">
-                </a>   
-            </nav>   
-            <!--SOCIAL MEDIA ?-->
-        </header>
-        
-        <!--MAIN CONTENT-->   
-        <main>
-            <article class="home">
-                <h1>For a Calm State of Mind. </h1>
-                <div class="home-img-container">
-                    <img src="./images/drinkCan3.png" alt="A Can of Nectar Drinks">
-                </div>
-            </article>
-          
-            <!--ARTICLE 1 Products-->
-            <article class="page-content" id="Products"> 
-                <div class="left-content">
-                    <section class="left-content-section" id="products-left-section">
-                        <h2>products</h2>
-                            <p id="product-description-home">  
-                                <span>Our lightly sparkling drinks are made here in Western Australia from locally sourced ingredients. Containing Hemp Extract and Adaptogens, our drinks are a slightly sweet and refreshing alternative to traditional sugary beverages. Click on a product to learn more.</span>
-                            </p>
-                            <p id="product-description-drink1">
-                                <span class ="description-title">Nectar Original</span>
-                                <span class="description">The drink that started it all. Our Nectar Original is an Australian First. Blending pure hemp extract with Australian Bush Mint 
-                                    and Euctalyptus, this drink contains high levels of adaptogens that will help keep you focused.</span>
-                                <span class="availability">Available Now</span>
-                            </p>
-                            <p id="product-description-drink2">
-                                <span class ="description-title">Sparkling Mint</span>
-                                <span class="description">Extreme Refreshment. This drink blends pure hemp extra with pure mint oil, crafting a delicious drink that is sure to quench any 
-                                    thirst. Perfect for a mid afternoon pick-up to help power through your day.
-                                </span>
-                                <span class="availability">Available Now</span>
-                            </p>
-                            <p id="product-description-drink3">
-                                <span class ="description-title">Pure Focus</span>
-                                <span class="description">This one's for all the students out there. We found the perfect blend of adaptogens to provide maximum focus without the usual post-caffine
-                                    slump. Perfect for staying focused through whatever life throws at you.  
-                                </span>
-                                <span class="availability">Available Now</span>
-                            </p>
-                            <p id="product-description-drink4">
-                                <span class ="description-title">Limitless Lime</span>
-                                <span class="description">What is limitless? Is it the absence of boundaries? Is it finding how far you can go? With Limitless Lime, you are sure to find out. Not only 
-                                    is Limitless Lime delicious, it also will give you the energy you need to take your abilities to the next level.   
-                                </span>
-                                <span class="availability">While Stocks Last</span>
-                            </p>
-                            <p id="product-description-drink5">
-                                <span class ="description-title">After Midnight</span>
-                                <span class="description">The adaptogens and hemp extract blended into After Midnight are scientifically designed to help calm the nervous system and fight stress. 
-                                    This is the perfect drink for those looking to de-stress and go with the flow. 
-                                </span>
-                                <span class="availability">Coming Soon</span>
-                            </p>
-                            <p id="product-description-drink6">
-                                <span class ="description-title">Ruby Refresh</span>
-                                <span class="description">The Citrus extra in Ruby Refresh is clinically proven to stimulate the mind and provides the electrolytes needed for your body to 
-                                    operate at peak performance. 
-                                </span>
-                                <span class="availability">Coming Soon</span>
-                            </p>
-                            <!--Nectar Aloe Plant -->
-                            <div id="aloe-img-container">
-                            <img id="aloe-img" src="./images/meritt-thomas-B4P1WwFHmOE-unsplash.jpg" alt="A Picture of an Aloe Nectar Plant.">
-                            </div>
-                    </section>
-                </div>
-                <div class="right-content">
-                    <div class="parent-product">
-                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink1")'>
-                            <div class="child-product-container">
-                                <img src="./images/drinkCan2.png" alt="Nectar drink can">    
-                                <div class="product-description">
-                                    <p class="product-type">Nectar Original 250ml</p>
-                                    <p>$4.50 AUD</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink2")'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <script src="js/script.js"></script> <!-- Link to Custom javascript for interative elements of page -->
+
+</head>
+
+<body>
+
+
+    <!--HEADER-->
+    <header>
+        <!--NAVIGATION-->
+        <nav>
+            <!--LOGO-->
+            <a href="./index.html" id="top-of-page-link">
+                <img src="./images/nectar_logo_transaparent.png" alt="Nectar Mandella Logo" id="logo">
+                <span id="nectar-brand-text">nectar</span>
+            </a>
+            <!-- Navigation Links - When clicked will scroll user to the selected ID-->
+            <div id="nav-links">
+                <a href="#Products">products</a>
+                <a href="#Our-Story">our story</a>
+                <a href="#Stockists">stockists</a>
+                <a href="#Contact">contact</a>
+            </div>
+            <!-- Hamburger Menu - Only Visible on Mobile Viewsize -->
+            <a href="javascript:void(0);" class="hamburger-menu" onclick="mobileMenu()">
+                <img src="./images/menu-icon.png" alt="Menu">
+            </a>
+        </nav>
+    </header>
+
+    <!--MAIN CONTENT-->
+    <main>
+        <!-- "Home" screen - Bold Typography design featuring extra large text -->
+        <article class="home">
+            <h1>For a Calm State of Mind. </h1>
+            <div class="home-img-container">
+                <img src="./images/drinkCan3.png" alt="A Can of Nectar Drinks">
+            </div>
+        </article>
+
+        <!--ARTICLE 1 Products-->
+        <article class="page-content" id="Products">
+            <div class="left-content">
+                <!-- Left "Column" - Product Descriptions -->
+                <section class="left-content-section" id="products-left-section">
+                    <h2>products</h2>
+                    <p id="product-description-home">
+                        <span>Our lightly sparkling drinks are made here in Western Australia from locally sourced
+                            ingredients. Containing Hemp Extract and Adaptogens, our drinks are a slightly sweet and
+                            refreshing alternative to traditional sugary beverages. Click on a product to learn
+                            more.</span>
+                    </p>
+                    <p id="product-description-drink1">
+                        <span class="description-title">Nectar Original</span>
+                        <span class="description">The drink that started it all. Our Nectar Original is an Australian
+                            First. Blending pure hemp extract with Australian Bush Mint
+                            and Euctalyptus, this drink contains high levels of adaptogens that will help keep you
+                            focused.</span>
+                        <span class="availability">Available Now</span>
+                    </p>
+                    <p id="product-description-drink2">
+                        <span class="description-title">Sparkling Mint</span>
+                        <span class="description">Extreme Refreshment. This drink blends pure hemp extra with pure mint
+                            oil, crafting a delicious drink that is sure to quench any
+                            thirst. Perfect for a mid afternoon pick-up to help power through your day.
+                        </span>
+                        <span class="availability">Available Now</span>
+                    </p>
+                    <p id="product-description-drink3">
+                        <span class="description-title">Pure Focus</span>
+                        <span class="description">This one's for all the students out there. We found the perfect blend
+                            of adaptogens to provide maximum focus without the usual post-caffine
+                            slump. Perfect for staying focused through whatever life throws at you.
+                        </span>
+                        <span class="availability">Available Now</span>
+                    </p>
+                    <p id="product-description-drink4">
+                        <span class="description-title">Limitless Lime</span>
+                        <span class="description">What is limitless? Is it the absence of boundaries? Is it finding how
+                            far you can go? With Limitless Lime, you are sure to find out. Not only
+                            is Limitless Lime delicious, it also will give you the energy you need to take your
+                            abilities to the next level.
+                        </span>
+                        <span class="availability">While Stocks Last</span>
+                    </p>
+                    <p id="product-description-drink5">
+                        <span class="description-title">After Midnight</span>
+                        <span class="description">The adaptogens and hemp extract blended into After Midnight are
+                            scientifically designed to help calm the nervous system and fight stress.
+                            This is the perfect drink for those looking to de-stress and go with the flow.
+                        </span>
+                        <span class="availability">Coming Soon</span>
+                    </p>
+                    <p id="product-description-drink6">
+                        <span class="description-title">Ruby Refresh</span>
+                        <span class="description">The Citrus extra in Ruby Refresh is clinically proven to stimulate the
+                            mind and provides the electrolytes needed for your body to
+                            operate at peak performance.
+                        </span>
+                        <span class="availability">Coming Soon</span>
+                    </p>
+                    <!--Nectar Aloe Plant -->
+                    <div id="aloe-img-container">
+                        <img id="aloe-img" src="./images/meritt-thomas-B4P1WwFHmOE-unsplash.jpg"
+                            alt="A Picture of an Aloe Nectar Plant."> <!-- Photo by Meritt Thomas on Unsplash -->
+                    </div>
+                </section>
+            </div>
+            <!-- Right "Column" - Product Images arranged in a flex layout -->
+            <div class="right-content">
+                <div class="parent-product">
+                    <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink1")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">
+                            <div class="product-description">
+                                <p class="product-type">Nectar Original 250ml</p>
+                                <p>$4.50 AUD</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink2")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">
                             <div class="product-description">
                                 <p class="product-type">Sparkling Mint 250ml</p>
                                 <p>$4.50 AUD</p>
                             </div>
                         </div>
-                        </a>
-                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink3")'>
+                    </a>
+                    <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink3")'>
                         <div class="child-product-container">
                             <img src="./images/drinkCan2.png" alt="Nectar drink can">
                             <div class="product-description">
                                 <p class="product-type">Pure Focus 250ml</p>
                                 <p>$4.50 AUD</p>
-                            </div>    
+                            </div>
                         </div>
-                        </a>
-                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink4")'>
+                    </a>
+                    <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink4")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">
                             <div class="product-description">
                                 <p class="product-type">Limitless Lime 250ml</p>
                                 <p>$4.50 AUD</p>
                             </div>
                         </div>
-                        </a>
-                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink5")'>
-                        <div class="child-product-container"> 
-                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
+                    </a>
+                    <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink5")'>
+                        <div class="child-product-container">
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">
                             <div class="product-description">
                                 <p class="product-type">After Midnight 250ml</p>
                                 <p>$4.50 AUD</p>
                             </div>
                         </div>
-                        </a>
-                        <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink6")'>
+                    </a>
+                    <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink6")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">
                             <div class="product-description">
                                 <p class="product-type">Ruby Refresh 600ml</p>
                                 <p>$9.00 AUD</p>
                             </div>
                         </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
-            </article>
-                
+            </div>
+        </article>
 
-            <!--ARTICLE 2 Our Story-->
-            <article class="page-content" id="Our-Story"> 
-                <div class="left-content">
-                    <section class="left-content-section">
-                        <h2>our story</h2>
-                            <p> Born in Margaret River, WA, we are one of the first companies in Australia to produce a functional beverage leveraging the benefits of Hemp Extract. 
-                                Tired of consuming energy drinks that consist mostly of caffine, we sought an alternative that would be perfect for social occasions and healthier 
-                                than other types of carbonated beverages. 
-                            </p>
-                            <p> What we found was Adaptogens, that can stimulate the nervous system to provide additional energy and focus. 
-                                Not only do our drinks provide cognative benefits, they also taste great. We have partnered with local producers to design flavours that are unique 
-                                to Australia, such as Honey and Euctalyptus. We are extremely proud of what we produce, and we hope that you will enjoy our products as much as we 
-                                enjoy making them. 
-                            </p>
-                    </section>
-                </div>
-                <div class="right-content">
-                    <!-- Image Slideshow. Reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-                    <div class="slideshow-container">
-                        <div class="our-story-slideshow" id="default-slideshow-img">
-                            <img src="./images/slideshow/jake-allison-SP1vGLLNHrc-unsplash.jpg" alt="A picture of Margaret River, WA.">
-                            <div class="our-story-slideshow-caption">Produced in Margaret River, WA.</div>
-                        </div>
-                        <div class="our-story-slideshow">
-                            <img src="./images/slideshow/stefan-rodriguez-1L8MQIJ1p3k-unsplash.jpg" alt="A vial of Hemp Extract.">
-                            <div class="our-story-slideshow-caption">Made from pure Hemp Extract.</div>
-                        </div>
-                        <div class="our-story-slideshow">
-                            <img src="./images/slideshow/jiri-brtnik-6H1Zl6Yy1Ik-unsplash.jpg" alt="A picture of hemp plants.">
-                            <div class="our-story-slideshow-caption">Produced by nature, bottled by us.</div>
-                        </div>
-                        <!-- Forward and back buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                </div>
-            </article>
-               
 
-            <!--ARTICLE 3 Stockists-->
-            <article class="page-content" id="Stockists"> 
-                <div class="left-content">
-                    <section class="left-content-section">
-                        <h2>stockists</h2>
-                            <p> Nectar Beverages are Available in select Supermarkets and Convienience Stores around Western Australia. </p>
-                            <p> Keep an eye on this page for more locations coming soon. </p>
-                    </section>
+        <!--ARTICLE 2 Our Story-->
+        <article class="page-content" id="Our-Story">
+            <!-- Left Column - Our Story Article Content -->
+            <div class="left-content">
+                <section class="left-content-section">
+                    <h2>our story</h2>
+                    <p> Born in Margaret River, WA, we are one of the first companies in Australia to produce a
+                        functional beverage leveraging the benefits of Hemp Extract.
+                        Tired of consuming energy drinks that consist mostly of caffine, we sought an alternative that
+                        would be perfect for social occasions and healthier
+                        than other types of carbonated beverages.
+                    </p>
+                    <p> What we found was Adaptogens, that can stimulate the nervous system to provide additional energy
+                        and focus.
+                        Not only do our drinks provide cognative benefits, they also taste great. We have partnered with
+                        local producers to design flavours that are unique
+                        to Australia, such as Honey and Euctalyptus. We are extremely proud of what we produce, and we
+                        hope that you will enjoy our products as much as we
+                        enjoy making them.
+                    </p>
+                </section>
+            </div>
+            <!-- Right Content - Our Story Image Slideshow -->
+            <div class="right-content">
+                <!-- Image Slideshow. Reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <div class="slideshow-container">
+                    <div class="our-story-slideshow" id="default-slideshow-img">
+                        <img src="./images/slideshow/jake-allison-SP1vGLLNHrc-unsplash.jpg"
+                            alt="A picture of Margaret River, WA."> <!-- Photo by Jake Allison on Unsplash -->
+                        <div class="our-story-slideshow-caption">Produced in Margaret River, WA.</div>
+                    </div>
+                    <div class="our-story-slideshow">
+                        <img src="./images/slideshow/stefan-rodriguez-1L8MQIJ1p3k-unsplash.jpg"
+                            alt="A vial of Hemp Extract."> <!-- Photo by Stefan Rodriguez on Unsplash -->
+                        <div class="our-story-slideshow-caption">Made from pure Hemp Extract.</div>
+                    </div>
+                    <div class="our-story-slideshow">
+                        <img src="./images/slideshow/jiri-brtnik-6H1Zl6Yy1Ik-unsplash.jpg"
+                            alt="A picture of hemp plants."> <!-- Photo by Jiri Brtnik on Unsplash -->
+                        <div class="our-story-slideshow-caption">Produced by nature, bottled by us.</div>
+                    </div>
+                    <!-- Forward and back buttons for Image Sligdeshow-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- < arrow -->
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- > arrow -->
                 </div>
-                <div class="right-content">
-                    <div class="parent-stockists">
-                        <div class="child-stockists">
-                            <p class="stockist-title">Woolworths</p>
-                            <p>All Metro Locations</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>                  
-                        <div class="child-stockists">
-                            <p class="stockist-title">Coles</p>
-                            <p>All Metro Locations</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>                  
-                        <div class="child-stockists">
-                            <p class="stockist-title">7-11</p>
-                            <p>54 Rogers Road, Acton WA 6123</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>                  
-                        <div class="child-stockists">
-                            <p class="stockist-title">Drakes Supermarkets</p>
-                            <p>45 Wallaby Way, Curtin WA 6932</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>                  
-                        <div class="child-stockists">
-                            <p class="stockist-title">Nutrition Direct</p>
-                            <p>67A Industrial Rd, Newtown WA 6532</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>                  
-                        <div class="child-stockists">
-                            <p class="stockist-title">Anywhere Gyms</p>
-                            <p>Perth</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>                  
+            </div>
+        </article>
+
+
+        <!--ARTICLE 3 Stockists-->
+        <article class="page-content" id="Stockists">
+            <!-- Left content - Stockists text -->
+            <div class="left-content">
+                <section class="left-content-section">
+                    <h2>stockists</h2>
+                    <p> Nectar Beverages are Available in select Supermarkets and Convienience Stores around Western
+                        Australia. </p>
+                    <p> Keep an eye on this page for more locations coming soon. </p>
+                </section>
+            </div>
+            <!-- Right Content - List of Stockists, their addresses and a Google Maps link -->
+            <div class="right-content">
+                <div class="parent-stockists">
+                    <div class="child-stockists">
+                        <p class="stockist-title">Woolworths</p>
+                        <p>All Metro Locations</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Map Embedding by Google Maps -->
+                    </div>
+                    <div class="child-stockists">
+                        <p class="stockist-title">Coles</p>
+                        <p>All Metro Locations</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Map Embedding by Google Maps -->
+                    </div>
+                    <div class="child-stockists">
+                        <p class="stockist-title">7-11</p>
+                        <p>54 Rogers Road, Acton WA 6123</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Map Embedding by Google Maps -->
+                    </div>
+                    <div class="child-stockists">
+                        <p class="stockist-title">Drakes Supermarkets</p>
+                        <p>45 Wallaby Way, Curtin WA 6932</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Map Embedding by Google Maps -->
+                    </div>
+                    <div class="child-stockists">
+                        <p class="stockist-title">Nutrition Direct</p>
+                        <p>67A Industrial Rd, Newtown WA 6532</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Map Embedding by Google Maps -->
+                    </div>
+                    <div class="child-stockists">
+                        <p class="stockist-title">Anywhere Gyms</p>
+                        <p>Perth</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216729.14444992764!2d115.83314961990826!3d-31.923089150594404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1668831812284!5m2!1sen!2sau"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Map Embedding by Google Maps -->
                     </div>
                 </div>
-            </article>
-            
-            <!--ARTICLE 4 Contact-->
-            <article class="page-content"  id="Contact"> 
-                <div class="left-content">
-                    <section class="left-content-section" id="contact-left-section">
-                        <h2>contact</h2>
-                            <p> Nectar Beverages</p>
-                            <p> Acton Street Perth, WA. </p>
-                            <p> (03) 977 334 556 </p>
-                    </section>
-                </div>
-                <div class="right-content" id="#contact-right-section">
-                    <form action="./index.html">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter name">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Enter Email">
-                        <label for="message">Message</label>
-                        <input type="text" id="message">
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </article>
-            
+            </div>
+        </article>
+
+        <!--ARTICLE 4 Contact-->
+        <article class="page-content" id="Contact">
+            <!-- Contact Information -->
+            <div class="left-content">
+                <section class="left-content-section" id="contact-left-section">
+                    <h2>contact</h2>
+                    <p> Nectar Beverages</p>
+                    <p> Acton Street Perth, WA. </p>
+                    <p> (03) 977 334 556 </p>
+                </section>
+            </div>
+            <!-- Contact Form -->
+            <div class="right-content" id="#contact-right-section">
+                <form action="./index.html">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter Email">
+                    <label for="message">Message</label>
+                    <input type="text" id="message">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </article>
+
 
         <!--MAIN CONTENT ENDS-->
-        </main>
-        
-        <!--FOOTER-->
-        <footer>
-            <!--Credits, Copyright Ect.-->
-            <p>
-                Created by Rebecca Barnett 2022
-            </p>
-            <p>
-                This website has been created as part of an assignment in an approved course of study for Curtin
-                University and contains copyright material not created by the author. All copyright material used
-                remains copyright of the respective owners and has been used here pursuant to Section 40 of the
-                Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without
-                consent of the original copyright owners. See code comments for references.
-            </p>
-        </footer>        
-        
-    </body> 
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <!--Credits, Copyright Ect.-->
+        <p>
+            Created by Rebecca Barnett 2022
+        </p>
+        <p>
+            This website has been created as part of an assignment in an approved course of study for Curtin
+            University and contains copyright material not created by the author. All copyright material used
+            remains copyright of the respective owners and has been used here pursuant to Section 40 of the
+            Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without
+            consent of the original copyright owners. See code comments for references.
+        </p>
+    </footer>
+
+</body>
+
 </html>
