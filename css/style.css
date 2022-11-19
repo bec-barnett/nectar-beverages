@@ -160,6 +160,14 @@ nav img{ /*Site Logo*/
     text-align: left;
 }
 
+.left-content-section p {
+    text-align: left;
+    font-size: 22px;
+    margin: 25px;
+    font-family: "AvenirNext-UltraLight";
+    font-weight: bold;
+}
+
 .right-content{ /* Child container articles, aligned right */
     flex: 1;
     margin-top: 40px;
@@ -181,13 +189,8 @@ h2{
     height: 600px;
 }
 
-.left-content-section p {
-    text-align: left;
-    font-size: 22px;
-    margin: 25px;
+#products-left-section p {
     height: 240px;
-    font-family: "AvenirNext-UltraLight";
-    font-weight: bold;
 }
 
 #product-description-home span {
@@ -359,10 +362,11 @@ h2{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 250px;
+    height: 275px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
     margin: 10px;
+    padding-bottom: 20px;
 }
 
 .stockist-title{
@@ -376,6 +380,44 @@ h2{
 }
 
 /* ==========SECTION 4 STYLING============= */
+
+#Contact, #Stockists, #Our-Story{
+    height: 100vh;
+    vertical-align: middle;
+}
+
+#contact-left-section p{
+    text-align: center;
+}
+
+#contact-right-section{
+    margin-top: 100px;
+}
+
+input[type=text], input[type=textarea] {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(192, 192, 192);
+    
+}
+
+input[type=textarea] {
+    height: 150px;
+}   
+
+form {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
 
 
 /* ==========FOOTER STYLIING============= */
