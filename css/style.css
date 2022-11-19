@@ -1,16 +1,21 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
 /* some basic css resetting */
 body {
-    background-image: url(../images/ryan-dewerff-6erhLtR1U7I-unsplash.jpg); /*Photo by Ryan DeWerff on Unsplash*/
-    background-color: #0FAACE; /* Used if the background image is unavailable */
-    background-size: cover; /* Stretch background image to fill screen*/
-    background-attachment: fixed; /* Background will stay in position as content scrolls over the top of it */
-    background-position: center; 
+    background-image: url(../images/ryan-dewerff-6erhLtR1U7I-unsplash.jpg);
+    /*Photo by Ryan DeWerff on Unsplash*/
+    background-color: #0FAACE;
+    /* Used if the background image is unavailable */
+    background-size: cover;
+    /* Stretch background image to fill screen*/
+    background-attachment: fixed;
+    /* Background will stay in position as content scrolls over the top of it */
+    background-position: center;
     background-repeat: no-repeat;
     font-size: 120%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 0px;/* Reset margins */
+    margin: 0px;
+    /* Reset margins */
     height: 100%;
     width: 100%;
 }
@@ -20,51 +25,60 @@ html {
     width: 100%;
 }
 
-a { /* Reset hyperlinks to not be blue and underlined */
+a {
+    /* Reset hyperlinks to not be blue and underlined */
     color: #000000;
     text-decoration: none;
 }
 
 /* ==========HEADER============= */
 header {
-    position: fixed; /* Fix header in position so it remains at top of screen as user scrolls */
+    position: fixed;
+    /* Fix header in position so it remains at top of screen as user scrolls */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2; /* Had issue with some text floating above navbar as user scrolls past. Fixed by using z-index on header*/
+    z-index: 2;
+    /* Had issue with some text floating above navbar as user scrolls past. Fixed by using z-index on header*/
 }
 
 /* ==========LOGO============= */
 /* ==========NAVIGATION============= */
 nav {
-    background: linear-gradient(to right, #7EBFCD, #C0EAF4); /* Gradient background colour to match client's logo design */
+    background: linear-gradient(to right, #7EBFCD, #C0EAF4);
+    /* Gradient background colour to match client's logo design */
     margin: auto auto;
     text-align: left;
     vertical-align: center;
     display: flex;
     height: 75px;
-    border-bottom: 4px solid #178ca7; /*Make a clearer transition from nav to main content section*/
+    border-bottom: 4px solid #178ca7;
+    /*Make a clearer transition from nav to main content section*/
 }
 
 @font-face {
     /* Import Font for main content  */
-    font-family: "Quicksand-Light"; /*  Quicksand Designed by Andrew Paglinawan from Google Fonts */
+    font-family: "Quicksand-Light";
+    /*  Quicksand Designed by Andrew Paglinawan from Google Fonts */
     src: url("../fonts/Quicksand-Light.ttf");
 }
 
 @font-face {
     /* Import main content font - bolder design*/
-    font-family: "Quicksand-Medium";/*  Quicksand Designed by Andrew Paglinawan from Google Fonts */
+    font-family: "Quicksand-Medium";
+    /*  Quicksand Designed by Andrew Paglinawan from Google Fonts */
     src: url("../fonts/Quicksand-Medium.ttf");
 }
 
 @font-face {
     /* Import client's chosen font - looks patchy on small font sizes - best used on larger text*/
-    font-family: "AvenirNext-UltraLight";/* Font made from http://www.onlinewebfonts.com" oNline Web Fonts - licensed by CC BY 3.0 */
+    font-family: "AvenirNext-UltraLight";
+    /* Font made from http://www.onlinewebfonts.com" oNline Web Fonts - licensed by CC BY 3.0 */
     src: url("../fonts/AvenirNext-UltraLight.ttf");
 }
 
-#nectar-brand-text {  /* Client Logo Text - Nectar */
+#nectar-brand-text {
+    /* Client Logo Text - Nectar */
     display: inline-flex;
     font-family: "AvenirNext-UltraLight";
     font-size: 50px;
@@ -74,13 +88,15 @@ nav {
     padding-bottom: 10px;
 }
 
-#top-of-page-link {/* Anchor tag to refresh page  */
+#top-of-page-link {
+    /* Anchor tag to refresh page  */
     display: inline-flex;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-nav img { /*Site Logo*/    
+nav img {
+    /*Site Logo*/
     display: inline-flex;
     margin-top: auto;
     margin-bottom: auto;
@@ -89,9 +105,11 @@ nav img { /*Site Logo*/
     width: 50px;
 }
 
-#nav-links { /* Navigation Links */
+#nav-links {
+    /* Navigation Links */
     display: inline-flex;
-    padding-top: 5px; /*push nav links down a little to align better with logo*/
+    padding-top: 5px;
+    /*push nav links down a little to align better with logo*/
     margin-left: 20px;
 }
 
@@ -104,30 +122,39 @@ nav img { /*Site Logo*/
 }
 
 #nav-links a:hover {
-    text-decoration: underline;  /* Make it clear when a link is being hovered*/
+    text-decoration: underline;
+    /* Make it clear when a link is being hovered*/
 }
 
-.hamburger-menu { /* Hamburger Menu for Mobile Navigation */
-    display: none; /*Don't show hamburger menu on desktop/tablet*/
+.hamburger-menu {
+    /* Hamburger Menu for Mobile Navigation */
+    display: none;
+    /*Don't show hamburger menu on desktop/tablet*/
 }
 
 /* ==========MAIN BODY CONTENT============= */
-.home { /* Landing Page - What user see's when first visiting website */
+.home {
+    /* Landing Page - What user see's when first visiting website */
     width: 100%;
-    height: 100vh; /* Make it take up the entire viewport in height */
-    background-image: url(../images/ibrahim-rifath-NJ7CaVfWYaw-unsplash.jpg); /* Image by Photo by Ibrahim Rifath on Unsplash */
+    height: 100vh;
+    /* Make it take up the entire viewport in height */
+    background-image: url(../images/ibrahim-rifath-NJ7CaVfWYaw-unsplash.jpg);
+    /* Image by Photo by Ibrahim Rifath on Unsplash */
     background-size: cover;
-    background-attachment: fixed; /* Background will stay in position as content scrolls over the top of it */
+    background-attachment: fixed;
+    /* Background will stay in position as content scrolls over the top of it */
     background-position: center;
     text-align: right;
 }
 
-.home h1 { /* Bold Typography Design - Large Title Text on Homepage */
+.home h1 {
+    /* Bold Typography Design - Large Title Text on Homepage */
     position: absolute;
     bottom: 0;
     right: 0;
     padding-right: 400px;
-    margin-bottom: 50px;  /*Align text with drink can*/
+    margin-bottom: 50px;
+    /*Align text with drink can*/
     font-size: 150px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -136,7 +163,8 @@ nav img { /*Site Logo*/
     width: 60%;
 }
 
-.home-img-container { /* Nectar Drink Can Image */
+.home-img-container {
+    /* Nectar Drink Can Image */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -144,7 +172,8 @@ nav img { /*Site Logo*/
     margin-bottom: 50px;
 }
 
-.home img { /* Nectar Drink Can Image */
+.home img {
+    /* Nectar Drink Can Image */
     width: 300px;
     height: 600px;
 }
@@ -195,8 +224,11 @@ h2 {
 /* Give Article's 100% view height*/
 #Contact,
 #Stockists,
-#Our-Story {
+#Our-Story,
+#Products {
     height: 100vh;
+    max-width: 1366px;
+    margin: auto;
 }
 
 /* ==========SECTION 1 STYLING - our products ============= */
@@ -215,7 +247,7 @@ h2 {
     text-align: center;
 }
 
-.description-title { 
+.description-title {
     display: block;
     font-family: "Quicksand-Medium";
 }
@@ -239,7 +271,8 @@ h2 {
 #aloe-img {
     width: 90%;
     height: 90%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px; /* Give Image a shadow */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+    /* Give Image a shadow */
 }
 
 /* =============== Products Display ============== */
@@ -263,12 +296,14 @@ h2 {
     margin: 10px;
 }
 
-.child-product-container:hover { /* Highlight element when user hovers over */
+.child-product-container:hover {
+    /* Highlight element when user hovers over */
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: rgba(255, 255, 255, 0.3) 0px 4px 8px;
 }
 
-.child-product-container img { /* Product Images */
+.child-product-container img {
+    /* Product Images */
     margin: auto;
     width: 100px;
     height: 200px;
@@ -286,7 +321,8 @@ h2 {
 #product-description-drink4,
 #product-description-drink5,
 #product-description-drink6 {
-    display: none;  /*Display is hidden until item is clicked - will still appear in the HTML for indexing by search engines*/
+    display: none;
+    /*Display is hidden until item is clicked - will still appear in the HTML for indexing by search engines*/
 }
 
 /* ==========SECTION 2 STYLING - Our Story ============= */
@@ -411,12 +447,14 @@ input[type=text],
 input[type=textarea] {
     display: block;
     margin: auto;
-    width: 100%; /* Make input elements 100% width */
+    width: 100%;
+    /* Make input elements 100% width */
     padding: 10px;
     border: 1px solid rgb(192, 192, 192);
 }
 
-#message { /* Make message input text-box slightly bigger than other text inputs */
+#message {
+    /* Make message input text-box slightly bigger than other text inputs */
     height: 150px;
 }
 
@@ -482,9 +520,10 @@ footer p {
         margin-bottom: 0;
     }
 
-    .right-content { 
+    .right-content {
         margin: 0px;
-        max-width: 80%; /* Increase width of the right column */
+        max-width: 80%;
+        /* Increase width of the right column */
     }
 
     /*==== Resize Product Display=== */
@@ -530,11 +569,13 @@ footer p {
     }
 
     .child-stockists iframe {
-        width: 160px; /* Make Google Maps iframe slightly smaller */
+        width: 160px;
+        /* Make Google Maps iframe slightly smaller */
         height: 140px;
     }
 
-    #Contact, /* Make Articles a little smaller */
+    #Contact,
+    /* Make Articles a little smaller */
     #Stockists {
         height: 75vh;
     }
@@ -548,7 +589,8 @@ footer p {
         display: none;
     }
 
-    #Our-Story .left-content, /* Make Left Column now take up 100% of width */
+    #Our-Story .left-content,
+    /* Make Left Column now take up 100% of width */
     #Products .left-content {
         min-width: 100%;
     }
@@ -557,7 +599,8 @@ footer p {
         height: auto;
     }
 
-    #Products .right-content { /* Make right column now take up 100% of width */
+    #Products .right-content {
+        /* Make right column now take up 100% of width */
         min-width: 100%;
     }
 
@@ -565,14 +608,16 @@ footer p {
         padding-top: 0;
     }
 
-    .slideshow-container img { /* Enforce a max width on slideshow images */
+    .slideshow-container img {
+        /* Enforce a max width on slideshow images */
         max-width: 500px;
         margin-top: 0;
     }
 
     .prev,
     .next {
-        top: 30%; /*Align slideshow buttons to be more centered with image*/
+        top: 30%;
+        /*Align slideshow buttons to be more centered with image*/
     }
 
     /* Resize Stockists Elements */
@@ -679,14 +724,16 @@ footer p {
 
     /* ===== MOBILE: Resize elements for responsiveness  ===== */
 
-    #nectar-brand-text { /* Logo text - make a little smaller */
+    #nectar-brand-text {
+        /* Logo text - make a little smaller */
         font-size: 30px;
         margin-left: 10px;
         padding-bottom: 5px;
     }
 
     nav img {
-        height: 40px; /*Make logo slightly smaller on mobile*/
+        height: 40px;
+        /*Make logo slightly smaller on mobile*/
         width: 40px;
         margin-left: 0px;
     }
@@ -729,7 +776,7 @@ footer p {
         font-size: 40px;
         margin: 5px;
     }
-    
+
     /* Resize product description */
     #product-description-home span {
         display: block;
@@ -750,7 +797,8 @@ footer p {
     }
 
     .child-product-container {
-        width: 100vh; /* Make products fill entire width of viewport */
+        width: 100vh;
+        /* Make products fill entire width of viewport */
         height: 300px;
         margin: 5px;
     }
@@ -769,8 +817,10 @@ footer p {
         /*Hide slideshow on mobile*/
     }
 
-    body { /* For Mobile use a different background that won't clash with text that appears over it */
-        background-image: url(../images/mobile-ryan-dewerff-6erhLtR1U7I-unsplash.jpg); /*Photo by Ryan DeWerff on Unsplash*/
+    body {
+        /* For Mobile use a different background that won't clash with text that appears over it */
+        background-image: url(../images/mobile-ryan-dewerff-6erhLtR1U7I-unsplash.jpg);
+        /*Photo by Ryan DeWerff on Unsplash*/
     }
 
     /* Make left columns all 100% width */
