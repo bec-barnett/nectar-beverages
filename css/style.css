@@ -833,7 +833,8 @@ footer p {
     /* Trim the height to be automatic on mobile views */
     #Contact,
     #Stockists,
-    #Our-Story {
+    #Our-Story, 
+    #Products {
         height: auto;
     }
 
