@@ -42,6 +42,12 @@
         
         <!--MAIN CONTENT-->   
         <main>
+            <article class="home">
+                <p>For a Calm State of Mind. </p>
+                <div class="home-img-container">
+                    <img src="./images/drinkCan3.png">
+                </div>
+            </article>
           
             <!--ARTICLE 1 Products-->
             <article class="page-content" id="Products"> 
@@ -49,9 +55,7 @@
                     <section class="left-content-section">
                         <h2>products</h2>
                             <p id="product-description-home">  
-                                <span>Nectar drinks are a new beverage with just a touch of sweetness, perfect for social occasions. </span><span>Our lightly sparkling drinks are made from hemp extract 
-                                and adaptogens, helping to promote a calm state of mind.</span><span> All of our products are produced in Mararet River, Western Australia and feature the highest 
-                                quality locally sourced ingredients. </span>
+                                <span>Click on a product to learn more.</span>
                             </p>
                             <p id="product-description-drink1">
                                 <span class ="description-title">Nectar Original</span>
@@ -94,13 +98,17 @@
                                 </span>
                                 <span class="availability">Coming Soon</span>
                             </p>
+                            <!--Nectar Aloe Plant -->
+                            <div id="aloe-img-container">
+                            <image id="aloe-img" src="./images/meritt-thomas-B4P1WwFHmOE-unsplash.jpg">
+                            </div>
                     </section>
                 </section>
                 <section class="right-content">
                     <div class="parent-product">
                         <a href="#" class="product-descriptions" onclick='displayDescription("product-description-drink1")'>
                             <div class="child-product-container">
-                                <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                                <img src="./images/drinkCan2.png" alt="Nectar drink can">    
                                 <div class="product-description">
                                     <p class="product-type">Nectar Original 250ml</p>
                                     <p>$4.50 AUD</p>
@@ -109,7 +117,7 @@
                         </a>
                         <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink2")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
                             <div class="product-description">
                                 <p class="product-type">Sparkling Mint 250ml</p>
                                 <p>$4.50 AUD</p>
@@ -118,7 +126,7 @@
                         </a>
                         <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink3")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan.png" alt="Nectar drink can">
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">
                             <div class="product-description">
                                 <p class="product-type">Pure Focus 250ml</p>
                                 <p>$4.50 AUD</p>
@@ -127,7 +135,7 @@
                         </a>
                         <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink4")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
                             <div class="product-description">
                                 <p class="product-type">Limitless Lime 250ml</p>
                                 <p>$4.50 AUD</p>
@@ -136,7 +144,7 @@
                         </a>
                         <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink5")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
                             <div class="product-description">
                                 <p class="product-type">After Midnight 250ml</p>
                                 <p>$4.50 AUD</p>
@@ -145,7 +153,7 @@
                         </a>
                         <a href="#"class="product-descriptions" onclick='displayDescription("product-description-drink6")'>
                         <div class="child-product-container">
-                            <img src="./images/drinkCan.png" alt="Nectar drink can">    
+                            <img src="./images/drinkCan2.png" alt="Nectar drink can">    
                             <div class="product-description">
                                 <p class="product-type">Ruby Refresh 600ml</p>
                                 <p>$9.00 AUD</p>
@@ -172,7 +180,24 @@
                     </section>
                 </section>
                 <section class="right-content">
-
+                    <!-- Image Slideshow. Reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                    <div class="slideshow-container">
+                        <div class="our-story-slideshow" id="default-slideshow-img">
+                            <img src="./images/slideshow/jake-allison-SP1vGLLNHrc-unsplash.jpg" alt="A picture of Margaret River, WA.">
+                            <div class="our-story-slideshow-caption">Made in Margaret River, WA.</div>
+                        </div>
+                        <div class="our-story-slideshow">
+                            <img src="./images/slideshow/stefan-rodriguez-1L8MQIJ1p3k-unsplash.jpg" alt="A vial of Hemp Extract.">
+                            <div class="our-story-slideshow-caption">Made from pure Hemp Extract.</div>
+                        </div>
+                        <div class="our-story-slideshow">
+                            <img src="./images/slideshow/ryan-dewerff-6erhLtR1U7I-unsplash.jpg" alt="A hummingbird gathering nectar.">
+                            <div class="our-story-slideshow-caption">Produced by nature, gathered by us.</div>
+                        </div>
+                        <!-- Forward and back buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                 </section>
             </article>
                
@@ -213,11 +238,6 @@
         
         <!--FOOTER-->
         <footer>
-            <!--Nectar Aloe Plant Sticky Graphic-->
-            <div id="footer-img-container">
-                <image id="footer-img" src="./images/aloe.png">
-            </div>
-
             <!--Credits, Copyright Ect.-->
             <p>
                 Created by Rebecca Barnett 2022
