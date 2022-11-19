@@ -30,7 +30,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: #000000;
     z-index: 2; /*Make sure nav bar appears over the top of ther elements*/
 }
 /* ==========LOGO============= */
@@ -120,25 +119,26 @@ nav img{ /*Site Logo*/
     text-align: right;
 }
 
-.home p {
+.home h1 {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding-right: 30%;
+    padding-right: 400px;
+    margin-bottom: 50px; /*Align heading with drink can*/
     font-size: 150px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #FFFFFF;
     text-align: right;
     width: 60%;
-    z-index: 1; /*Make sure nav bar appears over the top of ther elements*/
 }
 
 .home-img-container{
     position: absolute;
+    bottom: 0;
     right: 0;
-    margin-top: 10%;
-    margin-right: 10%;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 .home img{
@@ -162,8 +162,9 @@ nav img{ /*Site Logo*/
 
 .left-content-section p {
     text-align: left;
-    font-size: 22px;
-    margin: 25px;
+    font-size: 20px;
+    margin: 20px;
+    margin-bottom: 0;
     font-family: "AvenirNext-UltraLight";
     font-weight: bold;
 }
@@ -181,12 +182,15 @@ h2{
     text-align: center;
 }
 
+/* Give Article's 100% view height*/
+#Contact, #Stockists, #Our-Story{
+    height: 100vh;
+}
 
 /* ==========SECTION 1 STYLING============= */
 
 .left-content-section {
     margin: 20px;
-    height: 600px;
 }
 
 #products-left-section p {
@@ -202,7 +206,6 @@ h2{
 .description-title{
     display: block;
     font-family: "Quicksand-Medium";
-    padding-top: 20px; 
 }
 
 .description{
@@ -222,8 +225,8 @@ h2{
 }
 
 #aloe-img {
-    width: 95%;
-    height: 95%;  
+    width: 90%;
+    height: 90%;  
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;  
  }
 
@@ -239,8 +242,8 @@ h2{
 .child-product-container{ /* Child Class for Single Products*/
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 400px;
+    width: 250px;
+    height: 325px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
     margin: 10px;
@@ -253,23 +256,9 @@ h2{
 
 .child-product-container img{
     margin: auto;
-    width: 125px;
-    height: 250px;
+    width: 100px;
+    height: 200px;
     vertical-align: middle; 
-}
-
-.product-description{
-    position: relative;
-    bottom: 0;
-    max-width: 280px;
-    max-height: 100px;
-    min-width: 100%;
-    min-height: 25%;
-    overflow: hidden;
-}
-
-#Products .left-content-section {
-    height: 820px;
 }
 
 .product-type{
@@ -287,13 +276,18 @@ h2{
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100%;
+    max-width: 700px;
     position: relative;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
+  .slideshow-container img{
+    margin-top: 50px;
+    max-width: 700px;
+  }
+
   /* Hide the images by default */
   .our-story-slideshow {
   display:none;
@@ -303,6 +297,7 @@ h2{
   #default-slideshow-img{
     display: block;
   }
+
   
   /* Next & previous buttons */
   .prev, .next {
@@ -322,13 +317,11 @@ h2{
   /* Position the "next button" to the right */
   .next {
     right: 0;
-    padding-right: 40px;
     border-radius: 3px 0 0 3px;
   }
 
   .prev{
     left: 0;
-    padding-left: 40px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -361,12 +354,16 @@ h2{
 .child-stockists{ /* Child Class for Stockists*/
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
     margin: 10px;
     padding-bottom: 20px;
+}
+
+.child-stockists p {
+    font-size: 14px;
 }
 
 .stockist-title{
@@ -375,23 +372,17 @@ h2{
     margin-top: 20px; /*Reapply top margin*/
 }
 
+/*Center the google maps iframe*/
 .child-stockists iframe {
+    width: 210px; 
+    height: 150px;
     margin: auto;
 }
 
 /* ==========SECTION 4 STYLING============= */
 
-#Contact, #Stockists, #Our-Story{
-    height: 100vh;
-    vertical-align: middle;
-}
-
 #contact-left-section p{
     text-align: center;
-}
-
-#contact-right-section{
-    margin-top: 100px;
 }
 
 input[type=text], input[type=textarea] {
@@ -403,7 +394,7 @@ input[type=text], input[type=textarea] {
     
 }
 
-input[type=textarea] {
+#message {
     height: 150px;
 }   
 
@@ -447,8 +438,82 @@ footer {
     .hamburger-menu{ /*Dont show hamburger menu on desktop or tablet*/
         display: none;
     }
-      
+
+    .home h1 {
+        font-size: 120px;
+    }
+
+    #aloe-img-container{
+        display: none; /*Once screen size becomes small, remove Aloe image decoration*/
+    }
+
+    .left-content{ /* Child container for articles, aligned left */
+        margin: 0;
+        max-width: 30%;
+        min-width: 30%;
+        text-align: left;
+    }
     
+    .left-content-section p {
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    
+    .right-content{ /* Child container articles, aligned right */
+        margin: 0px;
+        max-width: 80%;
+    }     
+    
+    .child-product-container{ /* Child Class for Single Products*/
+        width: 200px;
+        height: 275px;
+        margin: 5px;
+    }
+
+    .child-product-container img{
+        width: 75px;
+        height: 150px;
+        vertical-align: middle; 
+    }
+
+    .child-product-container p{ 
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 50px;
+        margin: 10px;
+    }
+
+    .left-content-section p {
+        font-size: 18px;
+    }
+
+    .child-stockists{ /* Child Class for Stockists*/
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .child-stockists p {
+        font-size: 10px;
+    }
+    
+    .stockist-title{
+        margin-top: 10px; /*Reapply top margin*/
+    }
+    
+    /*Center the google maps iframe*/
+    .child-stockists iframe {
+        width: 160px; 
+        height: 140px;
+    }
+
+    #Contact, #Stockists {
+        height: 75vh;
+    }
+
 }
 
 /* ===== TABLET: Media queries for verticle and horizontal ===== */
@@ -456,6 +521,77 @@ footer {
     .hamburger-menu{ /*Dont show hamburger menu on desktop or tablet*/
         display: none;
     }
+
+    #Our-Story .left-content, #Products .left-content {
+        min-width: 100%;
+    }
+
+    #products-left-section p {
+        height: auto;
+    }
+
+    #Products .right-content {
+        min-width: 100%;
+    }
+
+    .slideshow-container {
+    padding-top: 0;
+    }
+
+    .slideshow-container img {
+        max-width: 500px;
+        margin-top: 0;
+    }
+
+    .prev, .next {
+        top: 30%; /*Align slideshow buttons to be more centered with image*/
+    }
+
+    .child-stockists{ /* Child Class for Stockists*/
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+        padding-bottom: 5px;
+    }
+    
+    .child-stockists p {
+        font-size: 5px;
+    }
+    
+    .stockist-title{
+        margin-top: 5px; /*Reapply top margin*/
+    }
+    
+    /*Center the google maps iframe*/
+    .child-stockists iframe {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .child-product-container{ /* Child Class for Single Products*/
+        width: 175px;
+        height: 225px;
+        margin: 5px;
+    }   
+
+    .child-product-container img{
+        width: 75px;
+        height: 150px;
+    }
+
+    .child-product-container p  {
+        font-size: 10px;
+    }
+
+    .home h1 {
+        font-size: 80px;
+        padding-right: 275px;
+    }
+
+    .home img {
+        width: 200px;
+        height: 400px;
+      }
       
     
 }
